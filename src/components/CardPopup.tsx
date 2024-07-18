@@ -49,7 +49,7 @@ const CardPopup: React.FC<CardPopupProps> = ({ show, handleClose }) => {
   const [uploadingLogo, setUploadingLogo] = useState(false);
   const [wrongImageType, setWrongImageType] = useState(false);
 
-  const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (event:any) => {
     const file = event.target.files?.[0];
     if (file && (file.type === 'image/png' || file.type === 'image/svg+xml' || file.type === 'image/jpeg')) {
       setUploadingLogo(true);

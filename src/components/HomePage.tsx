@@ -71,10 +71,10 @@ const HomePage = () => {
             {showInfoPopup && (
               <div className="relative w-full">
                 <div className="info fira-mono-regular leading-[20px] tracking-wider text-[14px] text-[#696969] dropdown p-5 border border-gray-300 rounded-md shadow-lg fixed inset-0 w-full flex items-center justify-center bg-black bg-opacity-50 px-4 py-8 overflow-auto z-50">
-                  <p className='bg-white p-10 rounded-lg relative w-[25%]'>
+                  <div className='bg-white p-10 rounded-lg relative w-[25%]'>
                     <i className="fas fa-times text-gray-600 text-lg cursor-pointer absolute top-2 right-2" onClick={toggleInfoPopup}></i>
                     Submit your community for our team&apos;s review. We will respond back to the email address provided in 1-2 business days and share any questions we may have before adding your community to our discovery page.
-                  </p>
+                  </div>
                 </div>
               </div>
             )}
@@ -116,10 +116,10 @@ const HomePage = () => {
               <div className="relative w-full">
          
           <div className="info2 fira-mono-regular leading-[20px] tracking-wider text-[14px] text-[#696969] dropdown p-10 border border-gray-300 rounded-md shadow-lg fixed inset-0 w-full flex justify-center items-center  bg-black bg-opacity-50    z-50">
-            <p className='bg-white relative  p-10 rounded-lg   w-full mt-40'>
+            <div className='bg-white relative  p-10 rounded-lg   w-full mt-40'>
               <i className=" fas fa-times text-gray-600 text-lg cursor-pointer absolute top-2 right-4" onClick={toggleInfoPopup}></i>
               Submit your community for our team&apos;s review. We will respond back to the email address provided in 1-2 business days and share any questions we may have before adding your community to our discovery page.
-            </p>
+            </div>
           </div>
         </div>
       )}
@@ -190,14 +190,14 @@ const HomePage = () => {
           className="z-50 glow-on-hover2 mt-9 py-6 bg-[#D574B633] bg-[url('/images/rectangle.png')] bg-no-repeat bg-cover bg-center bg-opacity-30 min-h-[30vh] rounded-lg flex flex-col justify-center items-center text-center p-6 w-full"
         >
           <p className="clash text-[#4428F2] text-[24px] md:text-[30px] font-medium leading-8 lg:leading-[68px] mb-4 ">JOIN OUR COMMON GROUND.</p>
-          <motion.p
+          <motion.div
             className=" text-[#1C1B22] text-[14px] lg:text-[20px] leading-5 lg:leading-6 fira-mono-regular mb-5 "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
           <p className=''> Stay connected to Si3’s ecosystem in the community membership platform Common Ground.</p> 
-          </motion.p>
+          </motion.div>
           <motion.button 
             whileHover={{ scale: 1.1 }}
             className=" z-50 bg-[#1C1B22] text-white px-6 py-4 rounded-lg leading-6 text-sm lg:text-[20px] fira-mono-regular"
