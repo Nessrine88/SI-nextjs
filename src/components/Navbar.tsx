@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
                 initial={{ opacity: 0, scaleY: 0 }}
                 animate={{ opacity: 1, scaleY: 1 }}
                 transition={{ duration: 0.2 }}
-                className="absolute top-0 md:top-[17px] mt-2 py-2 w-48 font-semibold tracking-wider bg-[#d3b4c2] bg-opacity-60 rounded-md shadow-lg z-10"
+                className="absolute top-0 md:top-[17px] mt-2 py-2 w-fit font-semibold tracking-wider bg-[#d3b4c2] bg-opacity-60 rounded-md shadow-lg z-10"
               >
                 <Link
                   href="#commonGround"
@@ -224,7 +224,8 @@ const Navbar: React.FC = () => {
               height={36}
               className="w-9 h-9"
             />
-            <Link href="https://app.push.org/channels/0x0D54bD457AF5b5691d1D9790746d4C95f7885CFF" className="block text-white navbar">
+            <Link href="https://app.push.org/channels/0x0D54bD457AF5b5691d1D9790746d4C95f7885CFF" 
+            className="hidden lg:inline text-white relative overflow-hidden font-semibold tracking-wider  ">
             SUBSCRIBE
             </Link>
           </div>
@@ -258,7 +259,7 @@ const Navbar: React.FC = () => {
           >
             SI Her Co-Active
           </motion.a>
-          {/* <motion.a
+          <motion.a
             href="#ecosystem"
             className="block text-white mb-2"
             initial={{ opacity: 0, y: -20 }}
@@ -266,7 +267,7 @@ const Navbar: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             Si3 Ecosystem
-          </motion.a> */}
+          </motion.a>
           <motion.a
             href="#onboard"
             className="block text-white mb-2"
